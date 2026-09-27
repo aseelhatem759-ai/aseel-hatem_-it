@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html</title>
+</head>
+
+<body>
+    <header align="center">
+        <h1>لغة HTML</h1>
+        <p>تعريف لغة HTML وهيكلها وأهم عناصرها وخصائصها</p>
+    </header>
+
+    <nav>
+    <a href="index.html">الرئيسية</a> |
+    <a href="web.html">تصميم ويب</a> |
+    <a href="html.html">لغة HTML</a> |
+    <a href="september26.html">سبتمبر26</a>
+
+</nav>
+
+<hr>
+
+    
+
+    <main>
+        <section id="definition">
+            <h2>تعريف لغة HTML</h2>
+            <p>
+                HTML هي اختصار للعبارة الإنجليزية
+                <strong>HyperText Markup Language</strong>، وتعني
+                <strong>لغة ترميز النص التشعبي</strong>.
+            </p>
+            <p>
+                تُستخدم HTML في إنشاء الهيكل الأساسي لصفحات الويب وتنظيم محتوياتها،
+                مثل العناوين والفقرات والصور والروابط والجداول والنماذج.
+            </p>
+            <p>
+                HTML ليست لغة برمجة، بل هي لغة ترميز تعتمد على مجموعة من الوسوم
+                التي تحدد نوع كل عنصر ومكانه داخل صفحة الويب.
+            </p>
+        </section>
+
+        <section id="history">
+            <h2>نبذة تاريخية عن HTML</h2>
+            <p>
+                ظهرت لغة HTML في بداية شبكة الويب العالمية، واستُخدمت لتبادل
+                المستندات والمعلومات من خلال صفحات مترابطة تحتوي على نصوص وروابط.
+            </p>
+            <p>
+                تطورت اللغة عبر عدة إصدارات، ويُعد HTML5 الإصدار الحديث الذي يدعم
+                عناصر متنوعة مثل الصوت والفيديو والعناصر الدلالية والنماذج المتقدمة.
+            </p>
+        </section>
+
+        <section id="purpose">
+            <h2>وظيفة لغة HTML</h2>
+            <ul>
+                <li>إنشاء هيكل صفحات الويب.</li>
+                <li>تنظيم النصوص داخل عناوين وفقرات.</li>
+                <li>إضافة الصور والروابط والقوائم.</li>
+                <li>إنشاء الجداول والنماذج.</li>
+                <li>إضافة ملفات الصوت والفيديو.</li>
+                <li>تحديد معنى أجزاء الصفحة باستخدام العناصر الدلالية.</li>
+            </ul>
+        </section>
+
+        <section id="structure">
+            <h2>الهيكل الأساسي لصفحة HTML</h2>
+            <p>
+                تتكون صفحة HTML من عناصر رئيسية، ويُكتب كل عنصر عادةً باستخدام وسم
+                بداية ووسم نهاية، باستثناء بعض العناصر التي لا تحتاج إلى وسم نهاية.
+            </p>
+
+            <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="ar" dir="rtl"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;عنوان الصفحة&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;عنوان رئيسي&lt;/h1&gt;
+    &lt;p&gt;هذه فقرة داخل الصفحة.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+            <h3>شرح مكونات الهيكل</h3>
+            <table border="1" cellpadding="8">
+                <tr>
+                    <th>العنصر</th>
+                    <th>وظيفته</th>
+                </tr>
+                <tr>
+                    <td>&lt;!DOCTYPE html&gt;</td>
+                    <td>يحدد أن المستند يستخدم HTML5.</td>
+                </tr>
+                <tr>
+                    <td>&lt;html&gt;</td>
+                    <td>العنصر الأساسي الذي يحتوي على جميع عناصر الصفحة.</td>
+                </tr>
+                <tr>
+                    <td>&lt;head&gt;</td>
+                    <td>يحتوي على المعلومات الخاصة بالصفحة التي لا تظهر غالبًا داخل المحتوى.</td>
+                </tr>
+                <tr>
+                    <td>&lt;meta charset="UTF-8"&gt;</td>
+                    <td>يساعد على عرض اللغة العربية والرموز بشكل صحيح.</td>
+                </tr>
+                <tr>
+                    <td>&lt;title&gt;</td>
+                    <td>يحدد العنوان الذي يظهر في تبويب المتصفح.</td>
+                </tr>
+                <tr>
+                    <td>&lt;body&gt;</td>
+                    <td>يحتوي على جميع المحتويات الظاهرة للمستخدم.</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="tags">
+            <h2>أهم وسوم HTML</h2>
+            <table border="1" cellpadding="8">
+                <tr>
+                    <th>الوسم</th>
+                    <th>الاستخدام</th>
+                    <th>مثال</th>
+                </tr>
+                <tr>
+                    <td>&lt;h1&gt; إلى &lt;h6&gt;</td>
+                    <td>إنشاء العناوين</td>
+                    <td>&lt;h1&gt;عنوان رئيسي&lt;/h1&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;p&gt;</td>
+                    <td>إنشاء فقرة نصية</td>
+                    <td>&lt;p&gt;نص الفقرة&lt;/p&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;br&gt;</td>
+                    <td>إضافة سطر جديد</td>
+                    <td>نص أول&lt;br&gt;نص ثانٍ</td>
+                </tr>
+                <tr>
+                    <td>&lt;strong&gt;</td>
+                    <td>إظهار نص مهم</td>
+                    <td>&lt;strong&gt;نص مهم&lt;/strong&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;a&gt;</td>
+                    <td>إنشاء رابط</td>
+                    <td>&lt;a href="page.html"&gt;اضغط هنا&lt;/a&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;img&gt;</td>
+                    <td>إضافة صورة</td>
+                    <td>&lt;img src="image.jpg" alt="وصف الصورة"&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;ul&gt; و &lt;li&gt;</td>
+                    <td>إنشاء قائمة غير مرتبة</td>
+                    <td>&lt;ul&gt;&lt;li&gt;عنصر&lt;/li&gt;&lt;/ul&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;ol&gt; و &lt;li&gt;</td>
+                    <td>إنشاء قائمة مرتبة</td>
+                    <td>&lt;ol&gt;&lt;li&gt;العنصر الأول&lt;/li&gt;&lt;/ol&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;table&gt;</td>
+                    <td>إنشاء جدول</td>
+                    <td>&lt;table&gt;...&lt;/table&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;form&gt;</td>
+                    <td>إنشاء نموذج لإدخال البيانات</td>
+                    <td>&lt;form&gt;...&lt;/form&gt;</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="attributes">
+            <h2>خصائص وسوم HTML</h2>
+            <p>
+                الخصائص أو Attributes هي معلومات إضافية تُكتب داخل وسم البداية،
+                وتساعد على تحديد سلوك العنصر أو معلوماته.
+            </p>
+
+            <h3>أمثلة على الخصائص</h3>
+            <table border="1" cellpadding="8">
+                <tr>
+                    <th>الخاصية</th>
+                    <th>تستخدم مع</th>
+                    <th>وظيفتها</th>
+                </tr>
+                <tr>
+                    <td>href</td>
+                    <td>&lt;a&gt;</td>
+                    <td>تحدد عنوان الرابط.</td>
+                </tr>
+                <tr>
+                    <td>src</td>
+                    <td>&lt;img&gt; و &lt;video&gt;</td>
+                    <td>تحدد مكان الملف أو الصورة.</td>
+                </tr>
+                <tr>
+                    <td>alt</td>
+                    <td>&lt;img&gt;</td>
+                    <td>تقدم وصفًا للصورة.</td>
+                </tr>
+                <tr>
+                    <td>id</td>
+                    <td>معظم العناصر</td>
+                    <td>تمنح العنصر معرفًا خاصًا.</td>
+                </tr>
+                <tr>
+                    <td>class</td>
+                    <td>معظم العناصر</td>
+                    <td>تحدد مجموعة أو تصنيفًا للعناصر.</td>
+                </tr>
+                <tr>
+                    <td>title</td>
+                    <td>معظم العناصر</td>
+                    <td>تضيف معلومة تظهر عند تمرير المؤشر على العنصر.</td>
+                </tr>
+            </table>
+
+            <h3>مثال على استخدام الخصائص</h3>
+            <pre><code>&lt;a href="https://example.com" target="_blank"&gt;
+    زيارة الموقع
+&lt;/a&gt;
+
+&lt;img src="photo.jpg" alt="صورة توضيحية" width="300"&gt;</code></pre>
+        </section>
+
+        <section id="semantic">
+            <h2>العناصر الدلالية في HTML5</h2>
+            <p>
+                العناصر الدلالية توضّح معنى محتوى الصفحة، وتجعل الكود أكثر تنظيمًا
+                وسهولة في القراءة والفهم.
+            </p>
+            <ul>
+                <li><strong>&lt;header&gt;</strong>: رأس الصفحة أو القسم.</li>
+                <li><strong>&lt;nav&gt;</strong>: قائمة التنقل والروابط الرئيسية.</li>
+                <li><strong>&lt;main&gt;</strong>: المحتوى الرئيسي للصفحة.</li>
+                <li><strong>&lt;section&gt;</strong>: قسم مستقل داخل الصفحة.</li>
+                <li><strong>&lt;article&gt;</strong>: محتوى مستقل مثل مقال أو خبر.</li>
+                <li><strong>&lt;aside&gt;</strong>: محتوى جانبي مرتبط بالمحتوى الرئيسي.</li>
+                <li><strong>&lt;footer&gt;</strong>: تذييل الصفحة.</li>
+            </ul>
+        </section>
+
+        <section id="advantages">
+            <h2>مميزات لغة HTML</h2>
+            <ol>
+                <li>سهلة التعلم والاستخدام.</li>
+                <li>مفتوحة ومجانية.</li>
+                <li>تعمل على مختلف أنظمة التشغيل والمتصفحات.</li>
+                <li>تدعم اللغة العربية والعديد من اللغات.</li>
+                <li>تسمح بإضافة النصوص والصور والفيديو والنماذج.</li>
+                <li>تتوافق مع CSS وJavaScript لتطوير صفحات متقدمة.</li>
+                <li>تُعد الأساس الذي تُبنى عليه معظم صفحات الويب.</li>
+            </ol>
+        </section>
+
+        <section id="notes">
+            <h2>ملاحظات مهمة</h2>
+            <ul>
+                <li>يجب حفظ ملف HTML بالامتداد <strong>.html</strong>.</li>
+                <li>يُفضل كتابة الوسوم بحروف صغيرة للمحافظة على تنظيم الكود.</li>
+                <li>يجب إغلاق معظم الوسوم بعد الانتهاء من محتواها.</li>
+                <li>خاصية <strong>alt</strong> مهمة لوصف الصور عند عدم ظهورها.</li>
+                <li>يمكن فتح ملف HTML مباشرة باستخدام أي متصفح إنترنت.</li>
+            </ul>
+        </section>
+    </main>
+
+    <hr>
+
+    
+</body>
+</html>
